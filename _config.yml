@@ -24,7 +24,7 @@ github_username:  Wobblyyyy
 
 # Build settings
 markdown: kramdown
-remote_theme: poole/lanyon
+theme: minima
 plugins:
   - jekyll-feed
 
