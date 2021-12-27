@@ -13,6 +13,9 @@ importantly, they're languages that are compiled to a sort of intermediate
 language, which is then executed by a runtime environment. Additionally, they
 have very similar syntax, roughly derived from that of C++.
 
+* TOC
+{:toc}
+
 # Which one is better?
 Here - I'll spoil it for you - C# is better. If you don't have the energy,
 time, or motivation to read through the entire article: in summary, C# is
@@ -32,13 +35,19 @@ performance, and you should consider other advantages and disadvantages of
 each of the languages unless you have a reason not to.
 
 ## Code style
+Code style is a highly subjective thing - there's no right or wrong preferences.
+C# and Java can be written in any way you'd like, but there are some style
+guidelines it's generally encouraged you stick to. Both C# and Java...
+- use 4 space indentation.
 
 ## Language features
 Alright. This is where C# really shines, and where Java... does not shine.
 
 ### Getters and setters vs Records
 Anyone who's written a line of Java in their life can tell you what a getter
-and setter method are.
+and setter method are. C# is leagues ahead of Java in terms of the usability
+of accessor methods. Although Java did, in fact, introduce Records with
+Java 16, C# still has Java beat.
 
 #### C#'s "Properties"
 {% highlight c# %}
@@ -146,5 +155,52 @@ public class ExampleRecordClass {
     }
 }
 {% endhighlight %}
+Well... it's not pleasant. I don't think it's hard to how C# has nicer
+accessor methods, especially when you have to see... that mess of code.
+
+### Operator Overloading
+Operator overloading is a C#-only feature with no direct Java equivalent.
+It's a neat feature that, while not essential, allows for a bit more syntactic
+sugar and can make code more concise and readable. Check out the
+[C# language reference][operator_overloading] page on operator overloading
+to learn more. The following snippet of code is stolen shamelessly from
+that aforementioned page.
+{% highlight c# %}
+using System;
+
+public readonly struct Fraction
+{
+    private readonly int num;
+    private readonly int den;
+
+    public Fraction(int numerator, int denominator)
+    {
+        num = numerator;
+        den = denominator;
+    }
+
+    public static Fraction operator +(Fraction a) => a;
+    public static Fraction operator -(Fraction a) => new Fraction(-a.num, a.den);
+
+    public static Fraction operator +(Fraction a, Fraction b)
+        => new Fraction(a.num * b.den + b.num * a.den, a.den * b.den);
+
+    public static Fraction operator -(Fraction a, Fraction b)
+        => a + (-b);
+
+    public static Fraction operator *(Fraction a, Fraction b)
+        => new Fraction(a.num * b.num, a.den * b.den);
+
+    public static Fraction operator /(Fraction a, Fraction b)
+    {
+        if (b.num == 0)
+        {
+            throw new DivideByZeroException();
+        }
+        return new Fraction(a.num * b.den, a.den * b.num);
+    }
+}
+{% endhighlight %}
 
 [properties]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties
+[operator_overloading]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading
