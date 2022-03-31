@@ -23,7 +23,6 @@ many of the complexities of lower-level programming languages: memory
 management and data structures, to name a few examples.
 
 ## It's popular. Extremely popular
-![Graph of best programming languages to learn in 2022][best-langs-to-learn]
 
 # Why Python is evil
 Allow me to preface this by saying that the title of this section (and this
@@ -58,7 +57,8 @@ Python, but it's certainly a component of what makes Python so slow.
 
 ## It's... too easy?
 Alright. Allow me to explain myself here. Python is an incredibly easy language
-to
+to learn - in fact, it's consistently ranked as one of the
+[easiest languages to learn][easiest-langs-to-learn].
 
 {% highlight vimscript %}
 noremap <Up> <Nop>
@@ -67,5 +67,5 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 {% endhighlight %}
 
-[best-langs-to-learn]: https://d1rytvr7gmk1sx.cloudfront.net/wp-content/uploads/2021/12/most-in-demand-programming-languages-of-2022-codingnomads.jpg
 [global-interpreter-lock]: https://realpython.com/python-gil/
+[easiest-langs-to-learn]: https://mikkegoes.com/easiest-programming-language/
