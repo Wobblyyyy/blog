@@ -197,7 +197,7 @@ statements. Let's take the first of those statements and break it down:
 
 What about JavaScript, another dynamically-typed scripting language?
 
-{% highlight %}
+{% highlight javascript %}
 let a = 0;
 let b = 3.14159;
 let c = 'Hey! Look! It\'s a string!';
