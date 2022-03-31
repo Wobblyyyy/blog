@@ -44,15 +44,36 @@ enjoyment. The chat service came to an unfortunate conclusion when it was
 blocked by the school for distracting my peers during class, but the fire had
 already been lit, and I began to take programming more seriously.
 
-[jekyllrb.com](https://jekyllrb.com/)
+Between my junior and senior years of high school, I was presented with the
+opportunity to be an IT Intern for KPM Exceptional. Unfortunately, this
+arrangement concluded after a couple of months due to some scheduling conflicts,
+but working on an office environment both taught me a lot and sharpened my
+programming skills. I worked primarily in C#: having a background in Java made
+it easy to pick up C#.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+### My favorite tech
+Like any other developer, I have a lot of preferences when it comes to the
+tools I use to write code.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+#### Vim (and, by extension, Neovim)
+[Vim][vim] is described as "a free and open-source, screen-based text editor,"
+and that's exactly what it is. I decided to learn Vim during quarantine,
+largely out of boredom. To put it simply, learning Vim is extremely difficult
+and requires a lot of dedication. It took me several months to finally start to
+feel comfortable using Vim for every-day editing. At the time of writing, I've
+been using Vim as my primary IDE for several months, and it's absolutely insane
+how much it's boosted my productivity. There's a keyboard shortcut for
+absolutely everything, and absolutely everything can be customized, with very
+few limitations on what you can and can't do.
 
+#### Java
+Java was the first programming language I fell in love with, and it's still the
+language I feel the most comfortable working with. It's object-oriented nature
+made it relatively easy for me to pick up, and many of the concepts I learned
+while working with Java transfer over to other programming languages extremely
+well. I find that Java is a happy medium between being high-level enough to
+grasp relatively quickly while also being low-level enough to teach concepts
+such as data structures, which I find languages like Python and JavaScript
+gloss over.
 
-[jekyll-organization]: https://github.com/jekyll
+[vim]: https://vim.org/
