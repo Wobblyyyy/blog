@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why Python is the root of all evil"
-date:   2022-3-31 09:58:23 -0500
+date:   2022-3-31 9:58:23 -0500
 categories: python
 ---
 Python is a high-level scripting language that first popped up in early 1991.
