@@ -49,7 +49,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class Example {
-    private Map\<String, Integer\> map = new HashMap\<\>() {{
+    private Map<String, Integer> map = new HashMap<String, Integer>() {{
         put("John", 8);
         put("Linda", 2);
         put("Mike", 5);
